@@ -1,0 +1,59 @@
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 40%;
+    }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    line-height: 2;
+}
